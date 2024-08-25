@@ -1,0 +1,45 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.por  {
+    text-align: center;
+    background-color: aqua;
+    padding: 40px;
+    margin: auto;
+     
+     display: flex;
+     display: block;
+     flex-direction: column;
+        
+}
+.por .ahamed {
+    text-align: center;
+ 
+    margin-top: 10px;
+    padding-bottom: 60px; ;
+    
+}
+.por button  {
+    position: absolute;
+    margin-left: 610px;
+    margin-top: 10px;
+    display: block;
+   padding: 5px;
+   text-align: center;
+}
+
+.por .ahamed h2 {
+    margin-bottom: 10px;
+    
+}
+
+.por h2 {
+    margin-bottom: 10px;
+}
+
+.por h3 {
+    padding: 60px;
+}
+

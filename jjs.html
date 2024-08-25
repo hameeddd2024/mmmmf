@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="js.css">
+    <title>txat</title>
+</head>
+<body>
+  <div class="por">
+    <div class="ahamed">
+      <h2>الطول
+      </h2>
+      <input type="text" id="aaa" value>
+      
+    </div>
+      
+          <h2>الوزن</h2>
+      <input type="text"id="aa" >
+      <button id="aax">الحساب</button>
+      <h3 id="ham"></h3>
+      <h3 id="mna"></h3>
+    </div>
+  </body>
+  
+  <script>
+    
+    document.getElementById("aax").addEventListener("click",function(){
+
+      var mystr = document.getElementById("aaa").value
+      
+      
+      var myst = document.getElementById("aa").value
+      var mystm = mystr/(myst*myst)
+      
+      document.getElementById("ham").innerHTML=`${mystm}`
+
+      document.getElementById("mna").innerHTML=`${mystm}`
+      
+     if(mystm<=18 ) {
+      console.log("نحافة")
+     }else if (mystm>=18 && mystm < 24.9) {
+       console.log("وزن مثالي ")
+     }else if (mystm >= 25 && mystm < 29.9) {
+      console.log ("وزن زائد")
+     }else if (mystm >= 30 && mystm < 34.9) {
+      console.log("سمنة درجة اولى")
+     }else if (mystm >= 35 && mystm <39.9) {
+      console.log("سمنة درجة ثانية ")
+     }else if (mystm > 40) {
+      console.log("سمنة خطيرة")
+     } else {
+      console.log("AHMED")
+     }
+     
+    
+})
+ 
+      // if (age >= 50) {
+      //   console.log("this  man is old " + age )
+      // }
+      // else if (age >= 30 && age <= 40) {
+      //   console.log( "this man is medle " +age)
+      // }
+      // else if (age >= 16 && age <= 20) {
+      //   console.log ("this man is yong" +age)
+      // }
+      // else {
+      //   console.log(aa)
+      // }
+
+      // switch (age) {
+      //   case (44): 
+      //   console.log("this is man ")
+      //   break
+
+      //   case (uu):
+      //     console.log("hamed")    
+      // }
+
+
+</script>
+</html>
